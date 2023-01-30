@@ -1,0 +1,28 @@
+docker pull postgres:alpine
+docker images
+docker run --name postgres-0 -e POSTGRES_PASSWORD=password -d -p 5432-5432 postgres:alpine
+docker ps
+docker exec -it postgres-0 bash
+pwd
+ls
+psql --help
+psql -U postgres
+\du
+create database test;
+\l
+\c test
+\d
+\q
+psql -h localhost -p 5432 -U postgres
+create database test2;
+\c test2
+create table student();
+\dt;
+\d student;
+\d+;
+create extension if not exists "uuid-ossp";
+select uuid_generate_v1();
+ insert into student (id, name, course) values (uuid_generate_v1(); 'madhuri', 'BCA');
+ select * from student
+ ;
+ 
