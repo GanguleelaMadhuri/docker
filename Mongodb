@@ -1,0 +1,9 @@
+docker pull mongo
+docker create mongo
+docker ps
+docker ps -a
+docker run --name mongo_v1 -d -p 27023:27017 mongo
+docker ps
+localhost:27017 (" mongodb install under that you can paste the localhost")
+under that you can check the mongodb is working or not.
+
